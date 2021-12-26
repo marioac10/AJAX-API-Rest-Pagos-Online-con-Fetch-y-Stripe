@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout con Stripe</title>
+    <link rel="stylesheet" href="API Fetch-Stripe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ 
+    <div class="title-pizza">
+        <ul>
+            <li><img src="img/logo_pizza.jpg" alt="pizza"></li>
+            <li><h1>Pizza Pop </h1></li>
+            <li><h3>¡Haz tú compra en un click! <i class="far fa-hand-point-up"></i></h3></li>
+        </ul>
+    </div>
+
+    <main>
+        
+        <h2 style="text-align: center;">MENÚ</h2>
+        <section id="pizzas" class="pizzas"></section>
+
+        <template id="pizza-template">
+            <figure class="pizza">
+                
+                <img>
+                <figcaption>
+    
+                </figcaption>
+            </figure>
+        </template>
+        
+    </main>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="stripe_checkout.js" type="module"></script>
+</body>
+</html>
